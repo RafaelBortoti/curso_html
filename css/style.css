@@ -7,23 +7,70 @@
 a{
     text-decoration: none;
 }
-
+/*------MENU------*/
 .menu{
-    background-color: gray;
+    background-image: url(../img/AnyConv.com__faixa\ menu.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100vw;
     height: 50px;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-ul{
-    display: flex;
-    gap: 20px;
+.menu img{
+    margin: 5px 0 0 150px;
+}
+.links{
+    margin: 15px 0 0 300px;
 }
 
-li{
-    list-style-type: none;
-    
+.links a{
+    margin: 0 10px;
+    color: white;
+}
+
+.btn_menu{
+    margin: 10px 0 10px 20px;
+    padding: 0px 25px 0px 25px;
+    background-color: orange;
+    color: white;
+    border: 1px;
+    border-radius: 4px;
+}
+/*------FIM MENU------*/
+
+.hero{
+    width: 100vw;
+    height: 650px;
+    background-image: url(../img/AnyConv.com__novo\ background.webp);
+    background-size: cover;
+    background-position-y: -80px ;
+    background-repeat: no-repeat;
+}
+
+.par_hero p{
+    color: white;
+    padding: 150px 0 0 150px;
+    font-size: 32px;
+}
+
+.fo{
+    color: orange;
+}
+
+.par_desc_hero p{
+    color: white;
+    margin: 10px 0;
+    padding: 0 0 0 150px;
+    font-size: 16px;
+}
+
+.btn_hero{
+    margin: 0 150px;
+    padding: 20px 40px;
+    border: 1px;
+    border-radius: 4px;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
 }
