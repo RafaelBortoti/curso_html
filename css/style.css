@@ -7,6 +7,12 @@
 a{
     text-decoration: none;
 }
+
+body{
+    overflow-x: hidden;
+}
+
+
 /*------MENU------*/
 .menu{
     background-image: url(../img/AnyConv.com__faixa\ menu.webp);
@@ -39,18 +45,18 @@ a{
 }
 /*------FIM MENU------*/
 
+/*------HERO------*/
 .hero{
     width: 100vw;
-    height: 650px;
+    height: 750px;
     background-image: url(../img/AnyConv.com__novo\ background.webp);
     background-size: cover;
-    background-position-y: -80px ;
     background-repeat: no-repeat;
 }
 
 .par_hero p{
     color: white;
-    padding: 150px 0 0 150px;
+    padding: 230px 0 0 230px;
     font-size: 32px;
 }
 
@@ -61,16 +67,48 @@ a{
 .par_desc_hero p{
     color: white;
     margin: 10px 0;
-    padding: 0 0 0 150px;
+    padding: 0 0 0 230px;
     font-size: 16px;
 }
 
 .btn_hero{
-    margin: 0 150px;
+    margin: 10px 230px;
     padding: 20px 40px;
     border: 1px;
     border-radius: 4px;
     background-color: orange;
     color: white;
     font-size: 16px;
+}
+/*------FIM HERO------*/
+
+/*------FAIXA------*/
+.faixa_hero{
+    background-color: #1d1d1d;
+    width: 100vw;
+    height: 100px;
+}
+/*------FIM FAIXA------*/
+
+.mentor{
+    background-image: url(../img/AnyConv.com__Landing\ page\ -Fluxo\ na\ Veia\ \(1\)\ -\ Cópia.webp);
+    display: flex;
+    height: 800px;
+    background-position-y: -90px ;
+    background-repeat: no-repeat;
+}
+.mentor img{
+    width: 800px;
+    height: 600px;
+    margin: 100px 0 0 300px;
+}
+
+.mentor h2{
+    color: orange;
+    margin: 200px 0 50px 100px;
+}
+
+.mentor p{
+    color: white;
+    margin: 0  150px 0 100px;
 }
