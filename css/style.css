@@ -9,19 +9,21 @@ a{
 }
 
 .menu{
-    width: 900px;
-    margin: 30px auto;
-    text-align: center;
+    background-color: gray;
+    width: 100vw;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-ul, li {
-    list-style: none;
+ul{
+    display: flex;
+    gap: 20px;
 }
 
-li > a{
-    color: black;
-    font-size: 20px;
-    margin:0 10px;
-    text-decoration: none;
+li{
+    list-style-type: none;
     
 }
