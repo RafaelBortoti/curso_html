@@ -8,9 +8,9 @@ a{
     text-decoration: none;
 }
 
-body{
+/*body{
     overflow-x: hidden;
-}
+}*/
 
 
 /*------MENU------*/
@@ -168,6 +168,7 @@ body{
 
 /*------FIM FLUXO------*/
 
+/*------DEPOIMENTOS------*/
 .depoimentos{
 background-color: black;
 }
@@ -177,3 +178,5 @@ background-color: black;
     color: white;
     font-size: 32px;
 }
+
+/*------FIM DEPOIMENTOS------*/
