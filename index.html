@@ -21,9 +21,9 @@
                 <select name="lista">
 
                     <option disabled selected>Qual sua idade</option>
-                    <option>20</option>
-                    <option>25+</option>
-                    <option>40+</option>
+                    <option value="20">20</option>
+                    <option value="25+">25+</option>
+                    <option value="40+">40+</option>
 
                 </select><!--lista-->             
             </div>
@@ -32,13 +32,13 @@
             <div class="input">
 
             <div>
-                <input type="radio" name="cidade"><span>Florianópolis</span>
+                <input type="radio" name="cidade" value="Florianópolis"><span>Florianópolis</span>
             </div><!--Florianólis-->
             <div>
-                <input type="radio" name="cidade"><span>São Paulo</span>
+                <input type="radio" name="cidade" value="São Paulo"><span>São Paulo</span>
             </div><!--São Paulo-->
             <div>
-                <input type="radio" name="cidade"><span>Rio de Janeiro</span>
+                <input type="radio" name="cidade" value="Rio de Janeiro"><span>Rio de Janeiro</span>
             </div><!--Rio de Janeiro-->
 
             </div><!--input-->
@@ -48,19 +48,19 @@
             <div class="input">
 
             <div>
-                <input type="checkbox" name="alimento"><span>Frutas</span>
+                <input type="checkbox" name="alimento[]" value="Frutas"><span>Frutas</span>
             </div><!--Frutas-->
             <div>
-                <input type="checkbox" name="alimento"><span>Fast Food</span>
+                <input type="checkbox" name="alimento[]" value="Fast Food"><span>Fast Food</span>
             </div><!--Fast Food-->
             <div>
-                <input type="checkbox" name="alimento"><span>Salada</span>
+                <input type="checkbox" name="alimento[]" value="Salada"><span>Salada</span>
             </div><!--Salada-->
 
             </div><!--input-->
 
             <div>
-                <textarea placeholder="Possui alguma observação, comente aqui!"></textarea>
+                <textarea name="observação" placeholder="Possui alguma observação, comente aqui!"></textarea>
             </div>
 
                                 <!--Enviar-->
