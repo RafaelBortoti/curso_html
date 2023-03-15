@@ -8,5 +8,40 @@ html, body{
     height: 100%;
 }
 a{
-    text-decoration: none;
+    text-decoration: none; 
 }
+
+form{
+    width: 96%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form fieldset{
+    padding: 20px 30px;
+    border: 1px solid black;
+}
+
+form legend{
+    font-size: 18px;
+}
+
+form input[type=text]{
+    display: inline-block;
+    margin-top: 10px;
+    max-width: 80%;
+    padding: 5px 30px;
+}
+
+form input[type=text]:focus{
+    outline: 0;
+}
+
+form select{
+    width: 43%;
+    margin-top: 30px;
+    padding: 10px 13px;
+    display: inline-block;
+}
+
