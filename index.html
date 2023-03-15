@@ -11,31 +11,62 @@
 <body>
     <form action="">
         <fieldset>
+
             <legend>Meu Formulário</legend>
+                            <!--Form nome e e-mail-->
             <div><input type="text" name="nome" placeholder="Digite seu nome"></div>
             <div><input type="text" name="email" placeholder="Digite seu e-mail"></div>
-            <div>
+
+            <div>           <!--Lista de idade-->
                 <select name="lista">
+
                     <option disabled selected>Qual sua idade</option>
                     <option>20</option>
                     <option>25+</option>
                     <option>40+</option>
-                </select>
-            </div>
 
+                </select><!--lista-->             
+            </div>
+                            <!--Radio-->
             <h2>Qual sua cidade?</h2>
+            <div class="input">
 
             <div>
-                <input type="radio"><span>Florianópolis</span>
-            </div>
+                <input type="radio" name="cidade"><span>Florianópolis</span>
+            </div><!--Florianólis-->
+            <div>
+                <input type="radio" name="cidade"><span>São Paulo</span>
+            </div><!--São Paulo-->
+            <div>
+                <input type="radio" name="cidade"><span>Rio de Janeiro</span>
+            </div><!--Rio de Janeiro-->
+
+            </div><!--input-->
+
+                            <!--CheckBox-->
+            <h2>O que você gosta de comer</h2>
+            <div class="input">
 
             <div>
-                <input type="radio"><span>São Paulo</span>
-            </div>
+                <input type="checkbox" name="alimento"><span>Frutas</span>
+            </div><!--Frutas-->
+            <div>
+                <input type="checkbox" name="alimento"><span>Fast Food</span>
+            </div><!--Fast Food-->
+            <div>
+                <input type="checkbox" name="alimento"><span>Salada</span>
+            </div><!--Salada-->
+
+            </div><!--input-->
 
             <div>
-                <input type="radio"><span>Rio de Janeiro</span>
+                <textarea placeholder="Possui alguma observação, comente aqui!"></textarea>
             </div>
+
+                                <!--Enviar-->
+                <div>
+                    <input type="submit" name="acao" value="Enviar">
+                </div>
 
         </fieldset>
     </form>
