@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+header{
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.w50{
+    width: 50%;
+    padding: 0 10px;
+}
+
+.menu{
+    text-align: right;
+}
+
+section.banner{
+    width: 100%;
+    min-height: 400px;
+    background-color: blue;
+    text-align: center;
+    padding: 90px 0;
+    color: white;
+}
+
+section.diferenciais{
+    display: flex;
+    flex-wrap: wrap;
+    text-align:  center;
+    padding: 20px 0;
+
+}
+
+.w33{
+    width: 33.3%;
+    padding: 0 10px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: blueviolet;
+}
+
+@media screen and (max-width: 768px) {
+    .w33, .w50{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
