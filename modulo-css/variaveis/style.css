@@ -1,0 +1,14 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+:root{
+   --corPadrao: blue;
+   --widthPadrao: 1100px
+}
+
+.container{
+   background-color: var(--corPadrao);
+}
