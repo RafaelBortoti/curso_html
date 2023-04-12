@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* SESSÃO 1 */
+section.main {
+    width: 100%;
+    height: 1185.3px;
+    background-image: url('../img/bg.svg');
+    background-position: center;
+    background-size: cover;
+    padding: 20px 0 80px 0;
+}
+
+.center {
+    display: flex;
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-menu {
+    width: 45%;
+   
+}
+
+.itens-menu{
+    width: 60%;
+    text-align: right;
+   
+    
+}
+
+
+.itens-menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+.itens-menu a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFDD33;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.itens-menu a:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.itens-menu input {
+    margin-left: 20px;
+    padding: 15px 25px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    background-color: #0F3FD3;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.titulo-paragrafo {
+    /* background-color: #ccc; */
+    margin-top: 100px;
+    text-align: center;
+}
+
+.titulo-paragrafo h2 {
+    font-size: 64px;
+    color: white;
+    font-weight: 400;
+}
+
+.titulo-paragrafo p {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+
+.img-mockup {
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.img-mockup h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* SESSÃO 2 */
+
+section.logos-empresas{
+    width: 100%;
+    display: flex;
+    
+    margin-bottom: 200px;
+    justify-content: center;
+}
+
+.logos-empresas img {
+    width: 80%;
+}
+
+
+
+/* SESSÃO 3 */
+section.desc{
+    width: 100%;
+    height: 880px;
+    padding: 75px;
+    background-color: #FBFCFE;
+    text-align: center;
+    
+}
+
+.desc .descricao > h2 {
+    font-size: 64px;
+}
+.desc .descricao > p {
+    font-size: 20px;
+    margin-top: 32px;
+}
+
+
+.container-desc {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;   
+}
+
+.container-desc .planejamento {
+    width: 536px;
+    height: 431;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 16px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+.container-desc .planejamento h2{
+    margin-bottom: 10px;
+    
+}
+
+.container-desc .pague {
+    width: 536px;
+    height: 431;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 16px;
+    margin-left: 50px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+.container-desc .pague h2{
+    margin-bottom: 10px;
+    
+    
+}
+
+
+.container-desc .suporte {
+    width: 536px;
+    height: 431;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 16px;
+    margin-left: 50px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+.container-desc .suporte h2{
+    margin-bottom: 10px;
+    
+}
+
+
+/* SESSÃO 4 */
+section.projeto{
+    width: 100%;
+    height: 432px;
+    background-image: url(../img/BANNER\ IMG.svg);
+    text-align: center;
+}
+
+.projeto .container-projeto{
+    padding-top: 100px;
+}
+
+.projeto .container-projeto h2{
+    font-size: 64px;
+    color: white;
+}
+
+.projeto .container-projeto p{
+    font-size: 20px;
+    color: white;
+    margin-top: 32px;
+    margin-bottom: 40px;
+}
+
+.projeto .container-projeto a{
+    background-color: #FFDD33;
+    text-decoration: none;
+    padding: 20px 50px;
+    border: 0;
+    border-radius: 10px;
+    color: #0F3FD3;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* SESSÃO 5 */
+section.beneficios {
+    width: 100%;
+    height: 983px;
+    display: flex;
+}
+
+.container-beneficios h2{
+    padding-top: 170px;
+    padding-left: 171px;
+    font-size: 64px;
+
+}
+
+.desc-beneficios1 {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 140px;
+}
+
+.desc-beneficios1 p {
+    font-size: 16px;
+}
+
+
+.desc-beneficios1 img {
+    margin-top: 20px;
+}
+
+.desc-beneficios2 {
+    display: flex;
+    align-items: center;
+    margin-left: 140px;
+}
+
+.desc-beneficios2 p {
+    font-size: 16px;
+}
+
+.desc-beneficios2 img {
+    margin-top: 20px;
+}
+
+.desc-beneficios3 {
+    display: flex;
+    align-items: center;
+    margin-left: 140px;
+}
+
+.desc-beneficios3 p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+
+.desc-beneficios3 img {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
+}
+
+.container-beneficios a {
+    width: 338px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    background-color: #0F3FD3;
+    margin-left: 170px;
+    padding: 20px 80px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.imagem-beneficios {
+    padding-top: 130px;
+}
+
+/* SESSÃO 6 */
+section.depoimentos {
+    width: 100%;
+    height: 1014px;
+    background-color: #FBFCFE;
+    
+}
+
+.depoimentos > h2 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-size: 64px;
+    text-align: center;
+}
+
+.container-slider {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.container-slider-single {
+    width: 536px;
+    height: 523px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 20px 50px #70707016;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.star-rater {
+    display: flex;
+}
+
+.span {
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+.container-slider-single img {
+    padding: 50px 0;
+}
+
+.container-slider-single h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.container-slider-single p.profissao {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.container-slider-single p.dep {
+    font-size: 16;
+    font-weight: 400;
+}
+
+
+
