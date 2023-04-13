@@ -100,7 +100,6 @@ function Avaliar(estrela) {
     avaliacao = 0;
    }}
     
-    document.getElementById('rating').innerHTML = avaliacao;
     
    }
 
@@ -208,7 +207,6 @@ function Avaliar(estrela) {
         avaliacao = 0;
    }}
     
-    document.getElementById('rating').innerHTML = avaliacao;
     
    }
 
@@ -316,7 +314,5 @@ function Avaliar(estrela) {
         document.getElementById("s15").src = "img/star0.png";
         avaliacao = 0;
    }}
-    
-    document.getElementById('rating').innerHTML = avaliacao;
-    
-   }
+        
+}

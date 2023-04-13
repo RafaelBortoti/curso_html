@@ -7,7 +7,7 @@
 
 /* SESSÃO 1 */
 section.main {
-    width: 100%;
+    max-width: 100%;
     height: 1185.3px;
     background-image: url('../img/bg.svg');
     background-position: center;
@@ -16,16 +16,16 @@ section.main {
 }
 
 .center {
-    display: flex;
-    max-width: 1100px;
+    max-width: 100%;
     padding: 0 2%;
     margin: 0 auto;
     flex-wrap: wrap;
 }
 
 .menu {
-    width: 100%;
-    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    display: flex; 
     align-items: center;
 }
 
@@ -35,12 +35,9 @@ section.main {
 }
 
 .itens-menu{
-    width: 60%;
+    max-width: 100%;
     text-align: right;
-   
-    
 }
-
 
 .itens-menu a {
     color: white;
@@ -50,10 +47,11 @@ section.main {
     position: relative;
 }
 
-.itens-menu a:before {
+.itens-menu a::before {
     content: "";
     position: absolute;
     width: 100%;
+    max-width: 100%;
     height: 3px;
     bottom: 0;
     left: 0;
@@ -71,10 +69,14 @@ section.main {
     transform: scaleX(1);
 }
 
-.itens-menu input {
+.menu a.btn-menu {
+    text-align: center;
+    text-decoration: none;
     margin-left: 20px;
-    padding: 15px 25px;
-    font-size: 14px;
+    padding: 15px 15px;
+    /* width: 300px;
+    max-width: 100%; */
+    font-size: 16px;
     font-weight: 700;
     color: white;
     background-color: #0F3FD3;
@@ -102,39 +104,36 @@ section.main {
     margin-top: 20px;
 }
 
-
 .img-mockup {
+    max-width: 100%;
     text-align: center;
     margin-top: 50px;
     position: relative;
 }
 
-.img-mockup h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.img-mockup img{
+    max-width: 100%;
+    text-align: center;
+    margin-top: 50px;
 }
 
-/* SESSÃO 2 */
 
+/* SESSÃO 2 */
 section.logos-empresas{
-    width: 100%;
+    max-width: 100%;
     display: flex;
-    
     margin-bottom: 200px;
     justify-content: center;
 }
 
 .logos-empresas img {
-    width: 80%;
+    width: 100%;
+    max-width: 80%;
 }
-
-
 
 /* SESSÃO 3 */
 section.desc{
-    width: 100%;
+    max-width: 100%;
     height: 880px;
     padding: 75px;
     background-color: #FBFCFE;
@@ -142,14 +141,13 @@ section.desc{
     
 }
 
-.desc .descricao > h2 {
+.desc > h2 {
     font-size: 64px;
 }
-.desc .descricao > p {
+.desc > p {
     font-size: 20px;
     margin-top: 32px;
 }
-
 
 .container-desc {
     display: flex;
@@ -158,7 +156,8 @@ section.desc{
 }
 
 .container-desc .planejamento {
-    width: 536px;
+    width: 100%;
+    max-width: 536px;
     height: 431;
     text-align: left;
     background-color: white;
@@ -176,7 +175,8 @@ section.desc{
 }
 
 .container-desc .pague {
-    width: 536px;
+    width: 100%;
+    max-width: 536px;
     height: 431;
     text-align: left;
     background-color: white;
@@ -191,13 +191,11 @@ section.desc{
 
 .container-desc .pague h2{
     margin-bottom: 10px;
-    
-    
 }
 
-
 .container-desc .suporte {
-    width: 536px;
+    width: 100%;
+    max-width: 536px;
     height: 431;
     text-align: left;
     background-color: white;
@@ -212,13 +210,12 @@ section.desc{
 
 .container-desc .suporte h2{
     margin-bottom: 10px;
-    
 }
 
 
 /* SESSÃO 4 */
 section.projeto{
-    width: 100%;
+    max-width: 100%;
     height: 432px;
     background-image: url(../img/BANNER\ IMG.svg);
     text-align: center;
@@ -254,16 +251,20 @@ section.projeto{
 
 /* SESSÃO 5 */
 section.beneficios {
-    width: 100%;
+    max-width: 100%;
     height: 983px;
     display: flex;
 }
 
+.beneficios .imagem-beneficios img {
+    max-width: 100%;
+}
+
 .container-beneficios h2{
+    max-width: 100%;
     padding-top: 170px;
     padding-left: 171px;
     font-size: 64px;
-
 }
 
 .desc-beneficios1 {
@@ -307,15 +308,14 @@ section.beneficios {
     margin-bottom: 40px;
 }
 
-
 .desc-beneficios3 img {
     margin-top: 20px;
     margin-bottom: 40px;
-    
 }
 
 .container-beneficios a {
-    width: 338px;
+    width: 100%;
+    max-width: 338px;
     display: block;
     text-decoration: none;
     color: white;
@@ -333,7 +333,7 @@ section.beneficios {
 
 /* SESSÃO 6 */
 section.depoimentos {
-    width: 100%;
+    max-width: 100%;
     height: 1014px;
     background-color: #FBFCFE;
     
@@ -348,12 +348,13 @@ section.depoimentos {
 
 .container-slider {
     display: flex;
-    overflow: hidden;
     justify-content: center;
 }
 
 .container-slider-single {
-    width: 536px;
+    justify-content: center;
+    width: 100%;
+    max-width: 536px;
     height: 523px;
     background-color: #FFFFFF;
     box-shadow: 0px 20px 50px #70707016;
@@ -363,22 +364,6 @@ section.depoimentos {
     margin-left: 50px;
     text-align: center;
 }
-
-.star-rater {
-    display: flex;
-}
-
-.span {
-    list-style-type: none;
-}
-
-
-
-
-
-
-
-
 
 .container-slider-single img {
     padding: 50px 0;
@@ -401,4 +386,277 @@ section.depoimentos {
 }
 
 
+/* SESSÃO 7 */
 
+section.contato {
+    width: 100%;
+    max-width: 100%;
+    height: 800px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.contato h2 {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.contato form {
+    width: 100%;
+    max-width: 612px;
+    margin: 0 auto;
+}
+
+.contato form .nome {
+    width: 100%;
+    max-width: 612px;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: #FCFDFF;
+    border: 1px solid #C3CCE8;
+    border-radius: 10px;
+    outline: none;
+}
+
+.contato form .email {
+    width: 100%;
+    max-width: 612px;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: #FCFDFF;
+    border: 1px solid #C3CCE8;
+    border-radius: 10px;
+    outline: none;
+}
+
+.contato form .msg {
+    width: 100%;
+    max-width: 612px;
+    height: 200px;
+    margin-bottom: 20px;
+    background-color: #FCFDFF;
+    border: 1px solid #C3CCE8;
+    border-radius: 10px;
+    outline: none;
+}
+
+.contato form input.btn-cnt {
+    width: 100%;
+    max-width: 612px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    background-color: #255AFF;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* SESSÃO 8 */
+
+section.footer {
+    width: 100%;
+    max-width: 100%;
+    height: 118px;
+    background-color: #0F3FD3;
+    display: flex;
+}
+
+.footer h2 {
+    padding: 50px 200px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.footer .itens-menu-footer {
+    margin-left: 700px;
+    padding-top: 50px;
+
+}
+
+.footer .itens-menu-footer a {
+    color: white;
+    font: 20px;
+    text-decoration: none;
+    margin-left: 20px;
+    
+}
+
+.itens-menu-footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+.itens-menu-footer a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFDD33;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.itens-menu-footer a:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 1366px) {
+    /* SESSÃO 1 */
+section.main {
+    width: 100%;
+    height: auto;
+}
+
+.center {
+    width: 100%;
+}
+
+.menu {
+    width: 100%;
+}
+
+.logo-menu {
+    max-width: 45%;
+   
+}
+
+.itens-menu{
+    max-width: 100%;
+}
+.img-mockup {
+
+    max-width: 100%;
+} 
+
+.img-mockup img {
+    max-width: 100%;
+
+}
+
+/* SESSÃO 2 */
+section.logos-empresas{
+    max-width: 100%;
+    height: auto;
+}
+
+.logos-empresas img {
+    width: 100%;
+    max-width: 80%;
+}
+
+
+/* SESSÃO 3 */
+section.desc{
+    width: 100%;
+    height: auto;
+}
+
+.container-desc .planejamento {
+    width: 100%;
+    height: auto;
+}
+
+.container-desc .pague {
+    width: 100%;
+    height: auto;
+}
+
+.container-desc .suporte {
+    width: 100%;
+    height: auto;
+}
+
+/* SESSÃO 4 */
+section.projeto{
+    width: 100%;
+}
+
+/* SESSÃO 5 */
+section.beneficios {
+    width: 100%;
+
+}
+
+.beneficios .imagem-beneficios img {
+   width: 100%;
+}
+
+.container-beneficios h2{
+    width: 100%;
+}
+
+/* SESSÃO 6 */
+section.depoimentos {
+    width: 100%;
+    height: auto;
+}
+
+.container-slider-single {
+    width: 100%;
+    height: auto;
+}
+
+/* SESSÃO 7 */
+
+section.contato {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.contato form {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.contato form .nome {
+    width: 100%;
+}
+
+.contato form .email {
+    width: 100%;
+}
+
+.contato form .msg {
+    width: 100%;
+}
+
+.contato form input.btn-cnt {
+    width: 100%;
+}
+
+/* SESSÃO 8 */
+
+section.footer {
+    justify-items: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+}
+
+
+.footer .itens-menu-footer {
+    width: 380px;
+    margin-left: 20%;
+}
+
+}
