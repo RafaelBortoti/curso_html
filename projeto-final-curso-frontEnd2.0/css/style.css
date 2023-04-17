@@ -267,6 +267,86 @@ section .center .container-slider {
     font-size: 16px;
 }
 
+section.contato {
+    text-align: center;
+}
+
+section.contato h2 {
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+section.contato > .center {
+    display: block;
+    justify-items: center;
+}
+
+section.contato > .center > form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+section.contato > .center > form input {
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #C3CCE8;
+    background-color: #FCFDFF;
+    outline: none;
+    padding-left: 10px;
+    opacity: 1;
+}
+
+section.contato > .center > form input#msg{
+    height: 200px;
+    margin-bottom: 10px;
+    
+}
+
+section.contato > .center > form input#msg::placeholder{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+section.contato > .center > form .btn-form{
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 10px;
+    background-color: #0F3FD3;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: 0;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+section.footer {
+    background-color: #0F3FD3;
+    text-align: center;
+    height: 119px;
+    
+}
+
+section.footer > .center {
+
+}
+
+section.footer > .center .itens-menu {
+    background-color: red;
+
+
+}
+
+
+
+
 
 
 @media screen and (max-width: 768px){
