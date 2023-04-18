@@ -334,13 +334,21 @@ section.footer {
     
 }
 
-section.footer > .center {
-
+section.footer  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-section.footer > .center .itens-menu {
-    background-color: red;
+section.footer p {
+    margin-top: 50px;
+    color: white;
+    font-weight: bold;
+}
 
+section.footer > .itens-menu {
+    margin-top: 50px;
+    margin-left: 40%;
+    
 
 }
 
