@@ -17,8 +17,12 @@ header {
 }
 
 header > .center {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
 }
 
 header > .center >  .logo1 {
@@ -26,8 +30,8 @@ header > .center >  .logo1 {
 }
 
 header > .center >  .logo1 img {
-    width: 30%;
-    max-width: 80%;
+    width: 100%;
+    max-width: 100%;
 }
 
 header > .center >  .logo2 {
@@ -36,12 +40,13 @@ header > .center >  .logo2 {
 }
 
 header > .center >  .logo2 img {
-    width: 30%;
-    max-width: 80%;
+    width: 100%;
+    max-width: 100%;
 }
 
 section.hero {
     width: 100%;
+    max-width: 100%;
     padding: 0 2%;
 }
 
@@ -113,8 +118,6 @@ section.hero {
 section.chamada {
     z-index: 1;
     text-align: center;
-    
-    
 }
 
 section.chamada .center {
@@ -135,6 +138,7 @@ section.chamada h2 {
 /*IMAGEM 1*/
 
 section.imagens .center {
+    width: 96%;
     padding: 1px;
     background-color: rgb(185, 238, 240);
     margin-bottom: 3px;
@@ -142,9 +146,7 @@ section.imagens .center {
 
 section.imagens .center .imagem1 {
     width: 100%;
-    display: grid;
-    grid-template-columns: 500px 1fr;
-    
+    display: flex;
 }
 
 section.imagens .center .imagem1 {
@@ -152,15 +154,16 @@ section.imagens .center .imagem1 {
 }
 
 section.imagens .center .imagem1 p {
+    width: 100%;
+    max-width: 600px;
     margin-left: 15px;
     margin-right: 15px;
 }
 
 section.imagens .center .imagem1 img {
     width: 100%;
-    max-width: 800px;
+    max-width: 680px;
     height: 300px;
-    margin-right: 10px;
 }
 
 /*IMAGEM 2*/
@@ -170,41 +173,41 @@ section.imagens .center {
     margin-bottom: 3px;
 }
 
-section.imagens .center .imagem2 {
+.imagens .center .imagem2 {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 500px;
-    
+    display: flex;
+    flex-direction:row-reverse;
 }
 
-section.imagens .center .imagem2 {
+.imagens .center .imagem2 {
     align-items: center;
     
 }
 
-section.imagens .center .imagem2 p {
+.imagens .center .imagem2 p {
+    width: 100%;
+    max-width: 600px;
     margin-left: 15px;
     margin-right: 15px;
 }
 
 
-section.imagens .center .imagem2 img {
+.imagens .center .imagem2 img {
     width: 100%;
-    max-width: 800px;
+    max-width: 680px;
     height: 300px;
 }
 
-
-section.imagens .center {
+/*IMAGEM 3*/
+.imagens .center {
     padding: 1px;
     background-color: rgb(185, 238, 240);
     margin-bottom: 3px;
 }
 
-section.imagens .center .imagem3 {
+.imagens .center .imagem3 {
     width: 100%;
-    display: grid;
-    grid-template-columns: 500px 1fr;
+    display: flex;
     
 }
 
@@ -213,35 +216,40 @@ section.imagens .center .imagem3 {
     
 }
 
-section.imagens .center .imagem3 p {
+.imagens .center .imagem3 p {
+    width: 100%;
+    max-width: 600px;
     margin-left: 15px;
     margin-right: 15px;
 }
 
 
-section.imagens .center .imagem3 img {
+.imagens .center .imagem3 img {
     width: 100%;
-    max-width: 800px;
+    max-width: 680px;
     height: 300px;
 }
 
 section.final-page .center {
+    width: 96%;
     background-color: rgb(219, 219, 219);
     padding: 40px 30px;
     text-align: center;
     margin-bottom: 3px;
 }
 
-section.final-page .center h2 {
+.final-page .center h2 {
     font-size: 30px;
     margin: 0 auto;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
 }
 
-section.final-page .center p {
+.final-page .center p {
     font-size:20px;
     margin: 20px  0 0 auto;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 
@@ -250,19 +258,45 @@ footer.rodape .center {
     
 }
 
-footer.rodape .center p {
+.rodape .center p {
     margin: 0 auto;
     font-size: 20px;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
 }
 
-footer.rodape .center img {
+.rodape .center img {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 
 @media screen and (max-width: 768px){
+
+    header > .center {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header > .center >  .logo1 img {
+        margin-top: 20px;
+        width: 60%;
+        max-width: 100%;
+    }
+    
+    header > .center >  .logo2 {
+        margin-top: 15px;
+        text-align: right;
+    }
+    
+    header > .center >  .logo2 img {
+        margin-top: 20px;
+        width: 60%;
+        max-width: 100%;
+    }
+    
+
+
     section.hero {
         width: 100%;
         padding: 0 2%;
@@ -271,6 +305,140 @@ footer.rodape .center img {
     .bg {
         justify-content: center;    
     } 
+
+    section.chamada .center {
+        max-width: 96%;
+        padding: 40px;
+        background-color: gray;
+        margin-bottom: 3px;
+    }
+    
+    /*IMAGEM 1*/
+    
+    section.imagens .center {
+        padding: 1px;
+        background-color: rgb(185, 238, 240);
+        margin-bottom: 3px;
+        text-align: center;
+        
+    }
+    
+    section.imagens .center .imagem1 {
+        width: 100%;
+        display: block;
+        
+        
+    }
+    
+    section.imagens .center .imagem1 {
+        align-items: center;
+    }
+    
+    section.imagens .center .imagem1 p {
+        padding: 50px;
+        max-width: 100%;
+    }
+    
+    section.imagens .center .imagem1 img {
+        width: 70%;
+        height: 300px;
+    }
+    
+    /*IMAGEM 2*/
+    
+    section.imagens .center {
+        background-color: rgb(185, 238, 240);
+        margin-bottom: 3px;
+        text-align: center;
+    }
+    
+    .imagens .center .imagem2 {
+        width: 100%;
+        display: block;
+        
+    }
+    
+    .imagens .center .imagem2 {
+        align-items: center;
+        
+    }
+    
+    .imagens .center .imagem2 p {
+        padding: 50px;
+        max-width: 100%;
+    }
+    
+    
+    .imagens .center .imagem2 img {
+        width: 70%;
+        height: 300px;
+    }
+    
+    /*IMAGEM 3*/
+    .imagens .center {
+        padding: 1px;
+        background-color: rgb(185, 238, 240);
+        margin-bottom: 3px;
+    }
+    
+    .imagens .center .imagem3 {
+        width: 100%;
+        display: block;
+        text-align: center;
+        
+    }
+    
+    section.imagens .center .imagem3 {
+        align-items: center;
+        
+    }
+    
+    .imagens .center .imagem3 p {
+        padding: 50px;
+        max-width: 100%;
+    }
+    
+    
+    .imagens .center .imagem3 img {
+        width: 70%;
+        height: 300px;
+    }
+    
+    section.final-page .center {
+        background-color: rgb(219, 219, 219);
+        padding: 40px 30px;
+        text-align: center;
+        margin-bottom: 3px;
+    }
+    
+    .final-page .center h2 {
+        font-size: 30px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .final-page .center p {
+        font-size:20px;
+        margin: 20px  0 0 auto;
+        width: 100%;
+    }
+    
+    
+    footer.rodape .center {
+        text-align: center;
+        
+    }
+    
+    .rodape .center p {
+        margin: 0 auto;
+        font-size: 20px;
+        width: 100%;
+    }
+    
+    .rodape .center img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
 }
 
