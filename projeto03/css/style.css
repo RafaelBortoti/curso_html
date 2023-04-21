@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+.center {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: #61269b;
+}
+
+header.cabecalho {
+    width: 100%;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cabecalho .navbar{
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.cabecalho .navbar img {
+    width: 100%;
+    max-width: 50px;
+}
+
+.cabecalho nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho nav ul li {
+    height: 20px;
+    font-size: 18px;
+    list-style-type: none;
+    margin-left: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* MAIN*/  
+main{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 30px;
+    background-image: url('../img/capa.png');
+    background-position: center;
+    background-size: cover;
+}
+
+main .info {
+    margin-right: 150px;
+}
+
+main .info h2 {
+    font-size: 54px;
+    color: white;
+}
+
+main .info p {
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+}
+
+section.desc-serv {
+    background-color: #472663;
+    width: 100%;
+    max-width: 100%;
+    height: 363px;
+}
+
+.desc-serv .center .desc {
+    margin-top: 50px;
+    position: relative;
+    left: 20px;
+}
+
+.desc-serv .center .desc h2 {
+    font-size: 34px;
+    font-weight: normal;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.desc-serv .center .desc p{
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    margin-bottom: 18px;
+}
+
+.desc-serv .center .desc ul li{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    list-style-position: inside;
+    margin-bottom: 5px;
+}
+
+.desc-serv .center .desc a {
+    position: relative;
+    top: 20px;
+    padding: 10px 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    background-color: #ff703e;
+    border: 0;
+    border-radius: 20px;
+}
+
+.desc-serv .center img {
+    width: 100%;
+    max-width: 510px;
+    position: relative;
+    top: -70px;
+    right: 20px;
+}
+
+section.detalhes{
+    width: 100%;
+    max-width: 100%;
+    height: 690px;
+}
+
+section.detalhes .center {
+    text-align: center;
+    
+}
+
+.detalhes .center h2 {
+    padding-top: 100px;
+    font-size: 35px;
+    color: #b2aabb;
+    margin-bottom: 30px;
+}
+
+.detalhes .center p {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    line-height: 30px;
+    color: #847493;
+} 
+
+.detalhes .center img {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    max-width: 800px;
+    -webkit-box-shadow: 0px 0px 35px 1px rgba(0,0,0,0.38);
+    -moz-box-shadow: 0px 0px 35px 1px rgba(0,0,0,0.38);
+    box-shadow: 0px 0px 35px 1px rgba(0,0,0,0.38);
+}
+
+section.time {
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: 1;
+}
+
+.time .desc-time {
+    background-color: #835fa8;
+    padding-top: 200px;
+    padding-left: 200px;
+    padding-right: 30px;
+}
+
+.time .desc-time h2 {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 30px;
+    color: #e4deeb;
+    margin-bottom: 10px;
+}
+
+.time .desc-time p {
+    width: 100%;
+    max-width: 400px;
+    color: #e4deeb;
+
+}
+
+.time .memb-time {
+    background-color: #f4f8fb;
+    padding-top: 200px;
+    padding-left: 30px;
+    padding-right: 200px;
+}
+
+.time .memb-time .equipe {
+    display: flex;
+}
+
+.time .memb-time .equipe img {
+    width: 100px;
+    margin-top: -20px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+.time .memb-time .equipe .membro1 h2 {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 30px;
+    color: #4e4f50;
+    margin-bottom: 0px;
+}
+
+.time .memb-time .equipe .membro1 p.co-founder {
+    margin-bottom: 10px;
+}
+
+.time .memb-time p {
+    width: 100%;
+    max-width: 400px;
+    color: #4e4f50;
+}
+
+section.form-mapa {
+   background-color: #472663;
+}
+
+section.form-mapa .center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 70px;
+}
+
+section.form-mapa .center .formulario h2 {
+    font-size: 40px;
+    color: white;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+section.form-mapa .center .formulario p {
+    width: 100%;
+    max-width: 400px;
+    font-size: 16px;
+    color: white;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+section.form-mapa .center .formulario form input{
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    margin-top: 10px;
+    outline: none;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+
+section.form-mapa .center .formulario form textarea {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px;
+    outline: none;
+    border-radius: 8px;
+}
+
+
+section.form-mapa .center .formulario form button {
+    margin-top: 10px;
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #ff703e;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mapa h2 {
+    font-size: 40px;
+    color: white;
+    font-weight: normal;
+    padding-left: 70px;
+}
+
+.mapa iframe {
+    padding-top: 30px;
+    padding-left: 70px;
+}
+
+footer.rodape {
+    background-color: #1a2124;
+}
+
+footer.rodape .center{
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer.rodape .center p {
+    color: white;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 0 70px;
+}
