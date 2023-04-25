@@ -14,6 +14,8 @@ html,body {
     margin: 0 auto;
 }
 
+/*HEADER*/
+
 header {
     padding: 20px 2%;  
 }
@@ -23,18 +25,152 @@ header .container{
     justify-content: space-between;  
 }
 
-header .container ul {
+header .container .desktop-menu ul {
     padding: 8px 0;
     display: flex;
 }
 
-header .container ul li {
+header .container .desktop-menu ul li {
     padding-left: 20px;
     list-style-type: none;
     text-transform: uppercase;
 }
 
-header .container ul li a {
+header .container .desktop-menu ul li a {
     color: #b4b4b4;
     text-decoration: none;
+}
+
+header .container nav.mobile-menu {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/menu.png);
+    background-size: 100% 100%;
+    display: none;
+}
+
+.container nav.mobile-menu:hover ul {
+    opacity: 1;
+}
+
+.container nav.mobile-menu ul{
+    opacity: 0;
+    transition: 1s;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 81px;
+    width: 100%;
+    color: white;
+    list-style-type: none;
+    text-align: center;
+}
+
+.container nav.mobile-menu ul li {
+    padding: 8px 0;
+    transition: 0.4s;
+    border-bottom: 1px solid black;
+}
+
+.container nav.mobile-menu ul li:hover {
+    background-color: rgb(230,230,230);
+}
+
+.container nav.mobile-menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/*FIM HEADER*/
+
+/*SESSÃO MOSAICO*/
+
+.mosaico {
+    padding: 0 2%;
+}
+
+.mosaico-wraper {
+    display: flex;
+}
+
+.mosaico-single {
+    width: calc(100% / 6);
+}
+
+.img-mosaico-single {
+    width: 100%;
+    padding-top: 100%;
+    background-color: #ccc;
+    border: 5px solid white;
+}
+
+/*FIM SESSÃO MOSAICO*/
+
+section.servicos .container{
+    display: flex;
+    max-width: 850px;
+    align-items: center;
+    position: relative;
+    top: -40px;
+}
+
+.servicos .container .box-servico h2 {
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.servicos .container .box-servico p {
+    color: white;
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+.servicos .container .box-servico:nth-of-type(1) {
+    width: 40%;
+    padding: 50px 10px;
+    background-color: #576975;
+    text-align: center;
+    color: white;
+    border-radius: 6px;
+}
+
+.servicos .container .box-servico:nth-of-type(2) {
+    width: 50%;
+    padding: 70px 10px;
+    background-color: #688293;
+    text-align: center;
+    color: white;
+    -webkit-box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.75);
+    border-radius: 6px;
+}
+
+.servicos .container .box-servico:nth-of-type(3) {
+    width: 40%;
+    padding: 50px 10px;
+    background-color: #576975;
+    text-align: center;
+    color: white;
+    border-radius: 6px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .container nav.mobile-menu {
+        display: block;
+    }
+    
+    .container nav.desktop-menu{
+        display: none;
+    }
+
+    
 }
