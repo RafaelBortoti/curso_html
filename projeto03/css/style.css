@@ -79,7 +79,11 @@ header .logo{
     float: left;
     width: 160px;
     height: 40px;
-    background-color: #ccc;
+    background-image: url(../img/amazon-logo-150px.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 header nav.desktop-menu ul {
@@ -299,13 +303,12 @@ section.sessao3 {
 }
 
 .titulo-autor .imagem-autor {
-    float: left;
+    display: flex;
     width: 40px;
     height: 40px;
+    background-image: url(../img/rafael.png);
+    background-size: 100% 100%;
     border-radius: 20px;
-    position: relative;
-    top: -4px;
-    background-color: gray;
 }
 
 .texto-autor {
@@ -556,7 +559,8 @@ footer .container {
     }
 
     .map-wraper3 {
-        display: inline-block; 
+        
+        display: inline-block;
         margin-top: 10px;
         width: 80%;
         padding-top: 80%;
