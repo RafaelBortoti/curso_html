@@ -158,10 +158,47 @@ section.servicos .container{
     border-radius: 6px;
 }
 
+section.perfil {
+    padding: 40px 0;
 
+}
 
+.perfil .container{
+    
+}
+.perfil .perfil-wraper {
+    max-width: 100%;
+    justify-content: center;
+    display: flex;
+}
 
+.img-perfil-wraper {
+    width: 100%;
+    max-width: 500px;
+    height: 450px;
+    background-image: url(../img/avatar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+.desc-perfil-wraper {
+    width: 100%;
+    max-width: 500px;
+}
+
+.desc-perfil-wraper h2 {
+    font-size: 40px;
+}
+
+.desc-perfil-wraper p{
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.desc-perfil-wraper ul li {
+    list-style-type: none;
+    margin-top: 8px;
+}
 
 @media screen and (max-width: 768px) {
     .container nav.mobile-menu {
