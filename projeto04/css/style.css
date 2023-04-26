@@ -200,6 +200,39 @@ section.perfil {
     margin-top: 8px;
 }
 
+section.clinica .container {
+    text-align: center;
+    padding-top: 40px;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.clinica .container h2 {
+    font-size: 40px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.clinica .container .video {
+    display: flex;
+    width: 100%;
+}
+
+.clinica .container .video .video1 {
+    width: 100%;
+}
+
+.clinica .container .video .video1 iframe {
+    width: 90%;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
 @media screen and (max-width: 768px) {
     .container nav.mobile-menu {
         display: block;
