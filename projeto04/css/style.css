@@ -298,14 +298,71 @@ section.tratamentos {
         position: relative;
         top: -20px;
     }
-    
+
     .perfil .perfil-wraper {
         max-width: 100%;
-        justify-content: center;
-        display: block;
+        display: flex;
         flex-direction: column;
         text-align: left;
-        background-color: red;
+    }
+
+    .perfil .img-perfil-wraper, .desc-perfil-wraper {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .perfil .desc-perfil-wraper h2 {
+        text-align: center;
+    }
+
+    .clinica .container > h2 {
+        margin-bottom: 20px;
+    }
+
+    .clinica .container .video {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .clinica .container .video .video1 {
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .clinica .container .video .video1 iframe {
+        width: 100%;
+        height: 200px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .tratamentos .container {
+        max-width: 1024px;
+    }
+    
+    .tratamentos .container > h2 {
+        padding-top: 100px;
+    }
+    
+    .tratamentos .container .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tratamentos .container .cards .desc-cards {
+        width: 90%;
+        margin: 50px auto;
+        position: relative;
+    }
+
+    .tratamentos .container .cards .desc-cards img {
+        position: absolute;
+        top: -50px;
+        margin: 0 -50px;
+        background-color: white;
+        border: 5px solid #f2f2f2;
+        border-radius: 50%;
     }
 
     
