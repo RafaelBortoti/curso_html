@@ -107,6 +107,8 @@ header .container nav.mobile-menu {
 
 /*FIM SESSÃO MOSAICO*/
 
+/*SERVIÇOS*/
+
 section.servicos .container{
     display: flex;
     max-width: 850px;
@@ -158,11 +160,13 @@ section.servicos .container{
     border-radius: 6px;
 }
 
+/*FIM SERVIÇOS*/
+
+/*PERFIL*/
+
 section.perfil {
     padding: 40px 0;
-
 }
-
 
 .perfil .perfil-wraper {
     max-width: 100%;
@@ -198,6 +202,10 @@ section.perfil {
     margin-top: 8px;
 }
 
+/*FIM PERFIL*/
+
+/*CLÍNICA*/
+
 section.clinica .container {
     text-align: center;
     padding-top: 40px;
@@ -226,6 +234,10 @@ section.clinica .container {
     margin-top: 20px;
     margin-bottom: 50px;
 }
+
+/*FIM CLÍNICA*/
+
+/*TRATAMENTOS*/
 
 section.tratamentos {
     background-color: #f2f2f2;;
@@ -279,6 +291,27 @@ section.tratamentos {
     border: 5px solid #f2f2f2;
     border-radius: 50%;
 }
+
+/*FIM TRATAMENTOS*/
+
+/*DEPOIMENTOS*/
+
+
+
+
+
+
+
+
+/*FIM DEPOIMENTOS*/
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
     .container nav.mobile-menu {
