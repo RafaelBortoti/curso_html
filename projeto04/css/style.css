@@ -296,6 +296,30 @@ section.tratamentos {
 
 /*DEPOIMENTOS*/
 
+section.depoimentos .container {
+    max-width: 1024px;
+}
+
+.depoimentos .container h2 {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+
+.depoimentos .container .depoimento-single  {
+    padding-top: 50px;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.depoimentos .container .nome-depoimentos {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
 
 
 
