@@ -556,13 +556,14 @@ footer .container {
         width: 100%;
         padding: 0 4%;
         margin-top: 40px;
+        
     }
 
     .map-wraper3 {
         
         display: inline-block;
         margin-top: 10px;
-        width: 80%;
+        width: 100%;
         padding-top: 80%;
         max-width: none;
         position: relative;
@@ -576,7 +577,14 @@ footer .container {
         width: 100%;
         height: 100%;
         padding-top: 0;
+
         
+    }
+
+    .map {
+       
+       
+        margin: 0 auto;
     }
 
 
